@@ -1,0 +1,14 @@
+C:\dev\dotnet\DesignCreational\obj\Debug\net8.0\DesignCreational.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\dotnet\DesignCreational\obj\Debug\net8.0\DesignCreational.AssemblyInfoInputs.cache
+C:\dev\dotnet\DesignCreational\obj\Debug\net8.0\DesignCreational.AssemblyInfo.cs
+C:\dev\dotnet\DesignCreational\obj\Debug\net8.0\DesignCreational.csproj.CoreCompileInputs.cache
+C:\dev\dotnet\DesignCreational\bin\Debug\net8.0\DesignCreational.exe
+C:\dev\dotnet\DesignCreational\bin\Debug\net8.0\DesignCreational.deps.json
+C:\dev\dotnet\DesignCreational\bin\Debug\net8.0\DesignCreational.runtimeconfig.json
+C:\dev\dotnet\DesignCreational\bin\Debug\net8.0\DesignCreational.dll
+C:\dev\dotnet\DesignCreational\bin\Debug\net8.0\DesignCreational.pdb
+C:\dev\dotnet\DesignCreational\obj\Debug\net8.0\DesignCreational.dll
+C:\dev\dotnet\DesignCreational\obj\Debug\net8.0\refint\DesignCreational.dll
+C:\dev\dotnet\DesignCreational\obj\Debug\net8.0\DesignCreational.pdb
+C:\dev\dotnet\DesignCreational\obj\Debug\net8.0\DesignCreational.genruntimeconfig.cache
+C:\dev\dotnet\DesignCreational\obj\Debug\net8.0\ref\DesignCreational.dll
