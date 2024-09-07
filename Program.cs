@@ -1,6 +1,8 @@
 ﻿using DesignCreational.NoFactory;
 using DesignCreational.Factory;
+using DesignCreational.AbstractFactory;
 using System;
+using System.Net.Sockets;
 
 namespace DesignCreational
 {
@@ -24,10 +26,10 @@ namespace DesignCreational
             _user = new FactoryUser(new RivianFactory());
             _user.ShowEVCarInfo();
         }
-        static void AbstractFactoryTest()
+        private void AbstractFactoryTest()
         {
             IEVCarFactory _evCarFactory = new NA_EVCarFactory();
-            EVCar _evCar = _evCarFactory.CreateEVCar();
+            AbstractFactory.EVCar _evCar = _evCarFactory.CreateEVCar();
             CarSpecfication _carSpecfication = _evCarFactory.CreateCarSpecfication();
             Console.WriteLine(_evCar.GetCarInfo());
             Console.WriteLine(_carSpecfication.GetSpecfication());
@@ -37,9 +39,18 @@ namespace DesignCreational
             Console.WriteLine(_evCar.GetCarInfo());
             Console.WriteLine(_carSpecfication.GetSpecfication());
         }
+        static void ProtocolTypeTest()
+        {
+            Resume myResume = new Resume("Full Name", "Full Address", "Phone Number");
+            Book myBook = new Book("Book Title", "Book Content");
+
+            myResume.ShowInfo();
+            myBook.ShowInfo();
+
+        }
         static void Main(string[] args)
         {
-            AbstractFactoryTest();
+            ProtocolTypeTest();
         }
     }
 }
