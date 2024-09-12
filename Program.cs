@@ -1,6 +1,7 @@
 ﻿using DesignCreational.NoFactory;
 using DesignCreational.Factory;
 using DesignCreational.AbstractFactory;
+using DesignCreational.Prototype;
 using System;
 using System.Net.Sockets;
 
@@ -39,7 +40,7 @@ namespace DesignCreational
             Console.WriteLine(_evCar.GetCarInfo());
             Console.WriteLine(_carSpecfication.GetSpecfication());
         }
-        static void ProtocolTypeTest()
+        private void ProtocolTypeTest()
         {
             Resume myResume = new Resume("Full Name", "Full Address", "Phone Number");
             Book myBook = new Book("Book Title", "Book Content");
@@ -48,9 +49,20 @@ namespace DesignCreational
             myBook.ShowInfo();
 
         }
+        static void BuilderTest()
+        {
+            Builder _gamingLaptopBuilder = new GamingLaptopBuilder();
+            LaptopDirector _laptopDirector = new LaptopDirector(_gamingLaptopBuilder);
+            _laptopDirector.Construct();
+
+            Builder _personalLaptopBuilder = new PersonalLaptopBuilder();
+            _laptopDirector = new LaptopDirector(_personalLaptopBuilder);
+            _laptopDirector.Construct();
+
+        }
         static void Main(string[] args)
         {
-            ProtocolTypeTest();
+            BuilderTest();
         }
     }
 }
